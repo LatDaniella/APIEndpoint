@@ -2,6 +2,7 @@ package com.example.apiendpoint
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.apiendpoint.databinding.ActivityDisneyDetailBinding
 
 class DisneyDetailActivity : AppCompatActivity() {
 
