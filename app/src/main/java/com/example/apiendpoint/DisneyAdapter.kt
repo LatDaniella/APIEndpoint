@@ -41,7 +41,6 @@ class DisneyAdapter(var dataSet: List<DisneyCharactersInfo>) :
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
 
         // Get element from your dataset at this position and replace the
-        // contents of the view with that element
         // assigning all values (put on click listeners too
         val disney = dataSet[position]
         viewHolder.textViewName.text = disney.name
