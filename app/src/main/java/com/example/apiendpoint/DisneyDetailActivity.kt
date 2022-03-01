@@ -18,9 +18,9 @@ class DisneyDetailActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // extract our Hero object from the intent
-        val character = intent.getParcelableExtra<Disney>(EXTRA_CHARACTER)
+        val character = intent.getParcelableExtra<DisneyCharactersInfo>(EXTRA_CHARACTER)
         // put each field of the Hero object into the respective widgets
-        binding.textViewDetailCountryName.text = character?.country ?: "Generic Character"
+        binding.textViewDetailDisneyName.text = character?.name ?: "Generic Character"
         val lastDay = character?.timeline?.lastKey()
         val lastDayNumber = character?.timeline?.get(lastDay).toString()
         binding.textViewDetailNumOfVacctinations.text = lastDayNumber
