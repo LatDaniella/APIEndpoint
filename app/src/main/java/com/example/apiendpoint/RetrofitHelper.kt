@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitHelper {
-    val baseUrl = "https://api.disneyapi.dev/"
+    val baseUrl = "https://api.disneyapi.dev/characters"
 
     fun getInstance() : Retrofit{
         return Retrofit.Builder()
